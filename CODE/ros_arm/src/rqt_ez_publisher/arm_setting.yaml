@@ -1,0 +1,33 @@
+publish_interval: 100
+settings:
+  /arm/j0_target_pos/data:
+    is_repeat: true
+    max: 178.43
+    min: -178.43
+  /arm/j1_target_pos/data:
+    is_repeat: true
+    max: 115.08
+    min: -115.08
+  /arm/j2_target_pos/data:
+    is_repeat: true
+    max: 130.14
+    min: -130.14
+  /arm/j3_target_pos/data:
+    is_repeat: true
+    max: 178.68
+    min: -178.68
+  /arm/j4_target_pos/data:
+    is_repeat: true
+    max: 130.04
+    min: -130.04
+  /arm/j5_target_pos/data:
+    is_repeat: true
+    max: 90.0
+    min: -90.0
+texts:
+- /arm/j0_target_pos/data
+- /arm/j1_target_pos/data
+- /arm/j2_target_pos/data
+- /arm/j3_target_pos/data
+- /arm/j4_target_pos/data
+- /arm/j5_target_pos/data

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ARM/ros_arm/src/arm_driver/src/serial_interface.cpp
+serial_interface.h
+/home/ubuntu/ARM/ros_arm/src/arm_driver/src/serial_interface.h
+serial_posix.h
+/home/ubuntu/ARM/ros_arm/src/arm_driver/src/serial_posix.h
+
+/home/ubuntu/ARM/ros_arm/src/arm_driver/src/serial_interface.h
+string
+-
+cstring
+-
+stdint.h
+-
+
+/home/ubuntu/ARM/ros_arm/src/arm_driver/src/serial_posix.h
+fcntl.h
+-
+stdio.h
+-
+unistd.h
+-
+termios.h
+-
+assert.h
+-
+errno.h
+-
+serial_interface.h
+/home/ubuntu/ARM/ros_arm/src/arm_driver/src/serial_interface.h
+

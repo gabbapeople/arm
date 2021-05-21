@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ARM/ros_arm/devel
+
+Name: serial
+Description: Description of serial
+Version: 1.2.1
+Cflags: -I/home/ubuntu/ARM/ros_arm/src/serial/include
+Libs: -L${prefix}/lib -lserial -lrt -lpthread
+Requires: 

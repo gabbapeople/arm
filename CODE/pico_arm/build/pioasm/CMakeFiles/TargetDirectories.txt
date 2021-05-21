@@ -1,0 +1,3 @@
+/home/ubuntu/ARM/pico_arm/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ARM/pico_arm/build/pioasm/CMakeFiles/edit_cache.dir
+/home/ubuntu/ARM/pico_arm/build/pioasm/CMakeFiles/pioasm.dir

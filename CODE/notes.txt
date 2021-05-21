@@ -1,0 +1,47 @@
+minicom -b 115200 -o -D /dev/ttyACM0
+
+https://daycounter.com/Calculators/Stepper-Motor-Calculator.phtml
+
+
+rosrun rqt_ez_publisher rqt_ez_publisher
+roslaunch arm_driver arm_driver.launch 
+
+
+SUBSYSTEMS=="usb", KERNELS=="1-5.2", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="controller_1"
+SUBSYSTEMS=="usb", KERNELS=="1-5.3", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="controller_2"
+SUBSYSTEMS=="usb", KERNELS=="1-5.4", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="controller_3"
+
+
+.program stepper
+.side_set 1 opt
+
+start:
+    set x, 0
+    mov osr, x
+main:
+    pull noblock       ; = mov osr x
+    mov x, osr
+    jmp !x main
+
+high:
+    mov y, isr      side 1
+highloop:
+    jmp y-- highloop
+
+low:
+    mov y, isr      side 0
+lowloop:
+    jmp y-- lowloop
+
+jmp x-- main
+
+
+% c-sdk {
+static inline void stepper_program_init(PIO pio, uint sm, uint offset, uint pin) {
+    pio_gpio_init(pio, pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+    pio_sm_config c = stepper_program_get_default_config(offset);
+    sm_config_set_sideset_pins(&c, pin);
+    pio_sm_init(pio, sm, offset, &c);
+}
+%}

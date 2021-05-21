@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/CMakeFiles/PioasmBuild"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/CMakeFiles/PioasmBuild.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/CMakeFiles/PioasmBuild-complete.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ARM/pico_arm/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"PioasmBuild"
+		],
+		"name" : "PioasmBuild"
+	}
+}

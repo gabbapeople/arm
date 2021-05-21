@@ -1,0 +1,9 @@
+<launch>
+	<node name="arm_driver" pkg="arm_driver" type="arm_driver" output="screen" />
+		<param name="arm_uart_port_0" type="string" value="/dev/controller_1"/>  
+		<param name="arm_uart_baudrate_0" type="int" value="115200"/>
+		<param name="arm_uart_port_1" type="string" value="/dev/controller_2"/>  
+		<param name="arm_uart_baudrate_1" type="int" value="115200"/>
+		<param name="arm_uart_port_2" type="string" value="/dev/controller_3"/>  
+		<param name="arm_uart_baudrate_2" type="int" value="115200"/>
+</launch>

@@ -1,0 +1,2 @@
+arm_driver:rqt_ez_publisher:serial
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/ARM/ros_arm/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ARM/ros_arm/install -G Unix Makefiles
